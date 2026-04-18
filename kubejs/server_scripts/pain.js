@@ -384,7 +384,6 @@ ServerEvents.recipes(event => {
 // shapeless and create stuff
 event.shapeless('kubejs:reinforced_string', ['minecraft:string', 'minecraft:string', 'minecraft:leather', Item.of('kubejs:sewing_needle').ignoreNBT()]).damageIngredient('kubejs:sewing_needle', 2)
 event.shapeless('kubejs:hardened_leather', ['minecraft:leather', 'minecraft:leather', 'minecraft:leather', Item.of('kubejs:sewing_needle').ignoreNBT()]).damageIngredient('kubejs:sewing_needle', 2)
-event.shapeless(Item.of('kubejs:sewing_needle').ignoreNBT(), ['minecraft:leather', 'minecraft:leather', 'minecraft:leather']).damageIngredient('kubejs:sewing_needle', 2)
 event.remove({output: 'minecraft:iron_sword'})
 event.shapeless('minecraft:iron_sword', ['minecraft:string', 'minecraft:leather', 'kubejs:iron_sword_template', Item.of('kubejs:sewing_needle').ignoreNBT()]).damageIngredient('kubejs:sewing_needle', 2)
 event.remove({output: 'minecraft:iron_pickaxe'})
@@ -410,7 +409,7 @@ event.shapeless('notreepunching:iron_mattock', ['kubejs:reinforced_string', 'kub
 event.remove({output: 'notreepunching:diamond_mattock'})
 event.shapeless('notreepunching:diamond_mattock', ['kubejs:reinforced_string', 'kubejs:reinforced_string', 'kubejs:hardened_leather', 'kubejs:hardened_leather', 'kubejs:diamond_mattock_template', Item.of('kubejs:sewing_needle').ignoreNBT()]).damageIngredient('kubejs:sewing_needle', 2)
 event.shapeless('create:iron_sheet', ['minecraft:iron_ingot', 'kubejs:iron_hammer']).damageIngredient('kubejs:iron_hammer', 2)
-event.blasting('kubejs:molten_iron', 'minecraft:iron_ingot', 0.4, 20400)
+event.blasting('kubejs:molten_iron', 'minecraft:iron_ingot', 0.4, 20010)
 event.smelting('kubejs:molten_plastic_pellets', 'kubejs:plastic_pellets', 0.4, 20400)
 event.recipes.create.milling('kubejs:diamond_dust', 'minecraft:diamond')
 event.recipes.create.pressing('kubejs:diamond_hardened_iron_sheet', 'kubejs:diamond_hardened_iron_ingot').heated()
