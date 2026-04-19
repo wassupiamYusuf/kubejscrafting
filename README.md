@@ -6,7 +6,6 @@ Create: Diesel Generators
 Create
 KubeJS Create
 KubeJS
-optional but recommended:
-Create: Metallurgy
+No Tree Punching
 how to install: put the kubejs folder you download from this repository in .minecraft with the required mods with forge in 1.20.1
 there was no reason for this to be made, its just WAR WITHOUT REASON
